@@ -6,7 +6,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 env: 
-  imagename: jeanlucksithi//tpback:{{ $ref_name }}
+  imagename: jeanlucksithi//tpback:${{ github.ref_name }}
 name: Java CI with Maven
 
 on:
