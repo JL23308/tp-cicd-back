@@ -13,7 +13,6 @@ jobs:
     strategy:
       matrix:
         node-version: [18.x, 20.x, 22.x]
-        # Voir le calendrier des versions Node.js : https://nodejs.org/en/about/releases/
 
     steps:
       - uses: actions/checkout@v4
@@ -33,7 +32,6 @@ jobs:
       - name: Run tests
         run: npm test
 
-      # 🧹 Nouvelle étape : Vérification du code (ESLint + TypeScript)
       - name: Lint and Type Check
         run: |
           echo "Running ESLint..."
