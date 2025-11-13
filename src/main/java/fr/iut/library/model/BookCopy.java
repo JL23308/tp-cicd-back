@@ -5,9 +5,10 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "BookCopy")
+@Table(name = "book_copy")
 public class BookCopy {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     
     @ManyToOne
